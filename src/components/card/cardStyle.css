@@ -6,9 +6,19 @@
   max-height: 20vh;
   max-width: 20vw;
   transition: transform 250ms;
+  animation: fadeIn 0.8s;
 }
 
 .card__img:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

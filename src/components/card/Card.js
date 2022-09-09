@@ -17,6 +17,7 @@ function Card({
   return (
     <div className="card">
       <img
+        loading="lazy"
         onClick={() => {
           if (image.clicked) {
             updateBestScore();
