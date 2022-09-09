@@ -1,11 +1,8 @@
 import './cardStyle.css';
-function Card() {
+function Card({ image }) {
   return (
     <div className="card">
-      <img
-        className="card__img"
-        src={require('./rossijskaya-imperiya-2.jpg')}
-      ></img>
+      <img className="card__img" src={require(`${image.src}`)}></img>
     </div>
   );
 }

@@ -5,4 +5,9 @@
   object-fit: contain;
   max-height: 20vh;
   max-width: 20vw;
+  transition: transform 250ms;
+}
+
+.card__img:hover {
+  transform: scale(1.2);
 }

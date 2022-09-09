@@ -10,6 +10,7 @@ body {
   display: flex;
   --font-gray: #3d3c42;
   color: var(--font-gray);
+  overflow-x: hidden;
 }
 
 code {
