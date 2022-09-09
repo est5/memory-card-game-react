@@ -8,8 +8,13 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Container />
+      <Header bestScore={bestScore} />
+      <Container
+        currentScore={currentScore}
+        setCurrentScore={setCurrentScore}
+        bestScore={bestScore}
+        setBestScore={setBestScore}
+      />
     </>
   );
 }

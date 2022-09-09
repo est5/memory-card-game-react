@@ -2,11 +2,11 @@ import BestScore from '../bestScore/BestScore';
 import Title from '../title/Title';
 import './headerStyle.css';
 
-function Header() {
+function Header({ bestScore }) {
   return (
     <header className="header">
       <Title />
-      <BestScore />
+      <BestScore bestScore={bestScore} />
     </header>
   );
 }
