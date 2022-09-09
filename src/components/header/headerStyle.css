@@ -1,0 +1,11 @@
+.header {
+  --header-blue: #a6d1e6;
+  background-color: #a6d1e6;
+  flex-grow: 1;
+  height: 10vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}

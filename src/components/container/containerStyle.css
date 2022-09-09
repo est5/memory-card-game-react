@@ -1,0 +1,11 @@
+.container {
+  --bg-cream: #fefbf6;
+  background-color: var(--bg-cream);
+  flex-grow: 5;
+  width: 100vw;
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

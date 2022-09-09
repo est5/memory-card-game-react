@@ -1,0 +1,8 @@
+.card {
+}
+
+.card__img {
+  object-fit: contain;
+  max-height: 20vh;
+  max-width: 20vw;
+}
