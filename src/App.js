@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import Container from './components/container/Container';
+import React from 'react';
 import Header from './components/header/Header';
+
+const Container = React.lazy(() => import('./components/container/Container'));
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
@@ -9,12 +11,14 @@ function App() {
   return (
     <>
       <Header bestScore={bestScore} />
-      <Container
-        currentScore={currentScore}
-        setCurrentScore={setCurrentScore}
-        bestScore={bestScore}
-        setBestScore={setBestScore}
-      />
+      <React.Suspense>
+        <Container
+          currentScore={currentScore}
+          setCurrentScore={setCurrentScore}
+          bestScore={bestScore}
+          setBestScore={setBestScore}
+        />
+      </React.Suspense>
     </>
   );
 }
